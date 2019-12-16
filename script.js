@@ -1,7 +1,7 @@
 const btnLogin = document.querySelector(".btn-login");
 const form = document.querySelector("form");
 
-/* Adiciona evento sempre houve um evento de clique */
+/* Adiciona evento sempre houver um evento de clique */
 btnLogin.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -22,12 +22,12 @@ btnLogin.addEventListener("click", (event) => {
             }
         });
     } else {
-        //adiciona um classe ao form;
+        //Adiciona uma classe ao form;
        form.classList.add("form-hide");
     }    
 });
 
-/* Adiciona evento sempre ao inicar animação */
+/* Cria um listener para o evento click sempre ao inicar animação */
 form.addEventListener("animationstart", event => {
 
     //diz qual a animação em especifico.
@@ -66,7 +66,7 @@ for(let i = 0; i < 11; i++){
     //cria durações diferentes;
     const duration = random(12, 24);
     
-    //aplica estido aos lis criados acima;
+    //aplica estilo aos lis criados acima;
     li.style.width=`${size}px`;
     li.style.height = `${size}px`;
     li.style.bottom = `-${size}px`;
